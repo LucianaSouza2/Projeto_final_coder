@@ -1,0 +1,22 @@
+
+p {
+    color:bisque
+}
+
+#bannerhome {
+    background-image: url("img_bg_index.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+div ul {
+    color: aqua;
+    list-style: none;
+    line-height: 30px;
+}
+
+.textobranco{
+    color: white;
+}
