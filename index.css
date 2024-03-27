@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 100;
+  padding: 0;
 }
 
 body {
@@ -23,6 +23,9 @@ ul {
 
 #menu {
   font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
   list-style: none;
   display: inline-flex;
   width: 100px;
@@ -31,6 +34,16 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  position: relative;
+  margin-left: 200px;
+}
+
+#bannerhome {
+  background-image: url("img_bg_index.png");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .titulo__principal{
@@ -38,8 +51,11 @@ ul {
   font-weight: 300;
   color: white;
   letter-spacing: 15px;
-  padding-top: 100px;
-  margin-left: 100px;
+  position: relative;
+  left: 15rem;
+  right: 49rem;
+  top: 21.5rem;
+  bottom: 29rem;
 }
 .profissao {
   color: aqua;
@@ -50,6 +66,12 @@ ul {
   letter-spacing: 15px;
   margin-left: 100px;
   margin-top: 50px;
+  position: absolute;
+  right: 15rem;
+  left:49rem;
+  top: 16rem;
+  bottom: 20rem;
+
 }
 
 .textobranco {
@@ -60,10 +82,4 @@ ul {
 
 }
 
-#bannerhome {
-  background-image: url("img_bg_index.png");
-  height: 920px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+
