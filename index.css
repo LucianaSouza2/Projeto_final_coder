@@ -1,52 +1,69 @@
-body {
-
-    font-family: "Montserrat", sans-serif;
-
+* {
+  margin: 0;
+  padding: 100;
 }
 
-p {
-    color:bisque
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  height: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+#menu {
+  font-weight: 400;
+  list-style: none;
+  display: inline-flex;
+  width: 100px;
+  height: 41px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.titulo__principal{
+  font-size: 38px;
+  font-weight: 300;
+  color: white;
+  letter-spacing: 15px;
+  padding-top: 100px;
+  margin-left: 100px;
+}
+.profissao {
+  color: aqua;
+  text-decoration: none;
+  line-height: 50px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.textobranco {
+  color: white;
+  padding: 35px 0px;
+  font-weight: 300;
+  font-size: 38px;
+
 }
 
 #bannerhome {
-    background-image: url("img_bg_index.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-}
-
-a:link{
-    text-decoration: none;
-}
-
-nav ul li {
-    
-    width: 1440px;
-    height: 120px;
-    list-style: none;
-    display: inline-flex;
-    width: 100px;   
-    height: 41px;
-    padding: 12.747px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-
-    
-
-
- 
- 
-
-}
-
-div ul {
-    color: aqua;
-    list-style: none;
-    line-height: 30px;
-}
-
-.textobranco{
-    color: white;
+  background-image: url("img_bg_index.png");
+  height: 920px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
