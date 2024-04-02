@@ -8,17 +8,18 @@ body {
 }
 
 header {
-  height: 150px;
-  margin-left: 100px;
-  margin-right: 100px;
+  height: 120px;
+  margin-left: 50px;
+  position: relative;
+  display: flex;
+  width: 1440px;
 }
-
 
 a:link {
   text-decoration: none;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 #menu {
@@ -27,33 +28,33 @@ ul {
   letter-spacing: 5px;
   font-size: 14px;
   list-style: none;
-  display: inline-flex;
-  width: 100px;
-  height: 41px;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+
+  gap: 60px;
+
   position: relative;
-  margin-left: 200px;
+  right: 3rem;
+  top: 3rem;
+  left: 67rem;
+
+  justify-content: center;
+  display: flex;
 }
 
 #bannerhome {
-  background-image: url("img_bg_index.png");
-  height: 800px;
+  background-image: url("img_bg_index_2.png");
+  height: 920px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.titulo__principal{
+.titulo__principal {
   font-size: 38px;
   font-weight: 300;
   color: white;
   letter-spacing: 15px;
   position: relative;
   left: 15rem;
-  right: 49rem;
   top: 21.5rem;
   bottom: 29rem;
 }
@@ -68,10 +69,8 @@ ul {
   margin-top: 50px;
   position: absolute;
   right: 15rem;
-  left:49rem;
   top: 16rem;
   bottom: 20rem;
-
 }
 
 .textobranco {
@@ -79,7 +78,4 @@ ul {
   padding: 35px 0px;
   font-weight: 300;
   font-size: 38px;
-
 }
-
-
