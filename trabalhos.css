@@ -22,6 +22,14 @@ ul {
   list-style: none;
 }
 
+p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  z-index: 1;
+  display: none;
+}
+
 #menu {
   font-weight: 400;
   text-transform: uppercase;
@@ -40,10 +48,18 @@ ul {
   display: flex;
 }
 
-section{
+
+section {
   width: 1440px;
   align-items: center;
   align-content: center;
+}
+
+#capas_01:hover {
+  background: url(/imagens/coca_hover.png);
+  position: absolute;
+  display: block;
+  z-index: 1;
 }
 
 #capas_01 {
@@ -63,3 +79,4 @@ section{
   align-content: flex-start;
   gap: 50px 25px;
 }
+
