@@ -9,10 +9,10 @@ body {
 
 header {
   height: 120px;
-  margin-left: 50px;
+  padding-left: 50px;
   position: relative;
   display: flex;
-  width: 1440px;
+  
 }
 
 a:link {
@@ -29,15 +29,19 @@ ul {
   font-size: 14px;
   list-style: none;
 
-  gap: 60px;
+  gap: 35px;
 
-  position: relative;
-  right: 3rem;
+  position: absolute;
   top: 3rem;
-  left: 67rem;
+  right: 3em;
 
   justify-content: center;
   display: flex;
+}
+
+#menu:hover a {
+  font-weight: 800;
+
 }
 
 #bannerhome {
@@ -54,7 +58,7 @@ ul {
   color: white;
   letter-spacing: 15px;
   position: relative;
-  left: 15rem;
+  padding-left: 220px;
   top: 21.5rem;
   bottom: 29rem;
 }
