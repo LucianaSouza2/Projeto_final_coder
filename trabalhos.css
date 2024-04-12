@@ -13,11 +13,11 @@ header {
   padding-left: 50px;
   position: relative;
   display: flex;
-  
 }
 
 a:link {
   text-decoration: none;
+  color: grey;
 }
 ul {
   list-style: none;
@@ -42,7 +42,6 @@ ul {
 
 #menu:hover a {
   font-weight: 800;
-
 }
 
 p {
@@ -54,18 +53,21 @@ p {
   color: aliceblue;
 }
 
-
-
 section {
   margin: 50px;
-
+  height: 920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  align-items: space-evenly;
+  align-content: space-evenly;
+  gap: 10px
 }
 
 .capa {
-  position: relative;
-  display: inline-block;
-  margin: 10px;
-  bottom: 10px;
+  position: relative;  
 }
 
 .capa__imagem--overlay {
