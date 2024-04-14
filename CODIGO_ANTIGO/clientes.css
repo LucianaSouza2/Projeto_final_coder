@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  height: 120px;
+  padding-left: 50px;
+  position: relative;
+  display: flex;
+  
+}
+
+a:link {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+#menu {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
+  list-style: none;
+
+  gap: 35px;
+
+  position: absolute;
+  top: 3rem;
+  right: 3em;
+
+  justify-content: center;
+  display: flex;
+}
+
+#menu:hover a {
+  font-weight: 800;
+
+}
