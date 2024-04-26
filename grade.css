@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#grade {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 100px 1fr 1fr 75px;
+
+    grid-template-areas: 
+    
+    "navegacao cabecalho cabecalho"
+    "navegacao produto1 publi"
+    "navegacao produto2 publi"
+    "navegacao rodape rodape"
+
+}
+
+header {
+    background-color: blanchedalmond;
+    grid-area: cabecalho;
+}
+
+section#section1 {
+    background-color: blueviolet;
+    grid-area: produto1;
+}
+section#section2 {
+    background-color:goldenrod;
+    grid-area: produto2;
+}
+
+nav {
+    background-color: aquamarine;
+    grid-area: navegacao;
+}
+aside {
+    background-color: darkgrey;
+    grid-area: publi;
+}
+
+footer {
+    background-color: cadetblue;
+    grid-area: rodape;
+}

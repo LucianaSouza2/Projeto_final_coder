@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid {
+  background-color: black;
+}
+.navbar-brand {
+  padding: 30px;
+}
+
+.nav-item,
+.nav-link {
+  color: aliceblue;
+  font-size: small;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+}
+
+.container-fluid-video-home {
+   display: flex;
+   height: 100vh;
+   width: max-contt;
+}
