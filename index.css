@@ -113,7 +113,6 @@ h1 {
 
 .texto__quem--somos {
   display: flex;
-  max-width: 500px;
   height: auto;
   color: black;
   font-size: 16px;
@@ -122,7 +121,7 @@ h1 {
   text-align: left;
   justify-content: space-between;
   align-items: center;
-  right: 7%;
+
 }
 
 p {
@@ -145,11 +144,16 @@ h2 {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 3px;
-  margin-left: 10%;
+
   grid-area: titulo;
 }
-h3 {
-  grid-area: texto;
+.texto_cases {
+  display: grid;
+  font-size: 18px;
+  font-weight:400;
+  line-height: 32px;
+  grid-area: texto_cases;
+  padding: 50px;
 }
 .section__quem-somos {
   width: 100%;
@@ -197,10 +201,11 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 20% repeat(3, 1fr);
   padding: 50px;
-  margin-bottom: 230px;
+  margin-bottom: 200px;
+
 
   grid-template-areas:
-    "titulo texto texto"
+    "titulo texto_cases texto_cases"
     "capa1 capa2 capa3"
     "capa4 capa5 capa6"
     "capa7 capa8 capa9";
@@ -303,3 +308,61 @@ h3 {
   padding-left: 10%;
   padding-right: 10%;
 }
+
+@media only screen and (max-width: 575.98px) {
+
+  .section__cases {
+    height: auto;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    margin-bottom: 50px;
+
+    grid-template-areas:
+
+    "titulo"
+    "texto_cases"
+    "capa1"
+    "capa2"
+    "capa3"
+    "capa4"
+    "capa5"
+    "capa6"
+    "capa7"
+    "capa8"
+    "capa9"
+   
+  } 
+}
+
+  @media only screen and (max-width: 767.98px) {
+
+    .section__cases {
+      height: auto;
+      width: 100%;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      gap: 10px;
+      grid-template-columns: repeat (2 1fr);
+      grid-template-rows: repeat (2 1fr);
+      padding: 20px;
+      margin-bottom: 50px;
+  
+      grid-template-areas:
+  
+      "titulo texto_cases"
+      "capa1 capa2"
+      "capa3 capa4"
+      "capa5 capa6"
+      "capa7 capa8"
+      "capa9"
+     
+     
+    } 
+  }
