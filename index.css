@@ -6,39 +6,47 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+.btn {
+  background-color: blueviolet;
+  border-color: blueviolet;
+  border-radius: 20px; 
 
+}
 .header {
-  display: flex;
-  height: 130px;
+  display: grid;
+  height: 100px;
   width: 100%;
   background-color: black;
+  grid-template-columns: 15% 15% 70%;
+
   align-items: center;
-  justify-content: space-between;
+  justify-items: center;
+
+
+  grid-template-areas: "logotipo . nav_menu";
 }
 
 .logotipo {
-  display: flex;
   height: 30%;
-  position: relative;
   align-items: center;
-  left: 7%;
-  flex-wrap: wrap;
+  padding left: 10px;
+  grid-area: logotipo;
 }
 
 .nav__menu {
   display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  justify-content: flex-start;
-  right: 7%;
+  width: 100%;
+  grid-area: nav_menu;
+ 
 }
 
 .ul__menu {
   display: flex;
-  gap: 25px;
+  gap: 5%;
   text-transform: uppercase;
   letter-spacing: 3px;
   list-style: none;
+  align-content: space-between;
 }
 
 li a {
@@ -100,6 +108,18 @@ h1 {
   justify-content: center;
 }
 
+.secao_quemsomos{
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+
+  grid-template-areas: " titulo_qs texto_qs";
+  padding: 50px;
+}
+.quem_somos{
+  grid-area: titulo_qs;
+}
 .titulo__main {
   color: aliceblue;
   font-size: 20px;
@@ -121,7 +141,7 @@ h1 {
   text-align: left;
   justify-content: space-between;
   align-items: center;
-
+  grid-area: texto_qs;
 }
 
 p {
@@ -136,21 +156,35 @@ p {
   position: relative;
 }
 
+.txt_clientes {
+  color: aliceblue;
+}
+
 h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 3px;
 
   grid-area: titulo;
 }
+
+h4{
+    color: aliceblue; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 50px;
+  }
+
+
 .texto_cases {
   display: grid;
   font-size: 18px;
-  font-weight:400;
+  font-weight: 400;
   line-height: 32px;
   grid-area: texto_cases;
   padding: 50px;
@@ -176,6 +210,10 @@ h2 {
   width: 100%;
   height: 500px;
   background-color: rgb(241, 240, 238);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px
 }
 
 /* .section__cases {
@@ -203,7 +241,6 @@ h2 {
   padding: 50px;
   margin-bottom: 200px;
 
-
   grid-template-areas:
     "titulo texto_cases texto_cases"
     "capa1 capa2 capa3"
@@ -212,7 +249,7 @@ h2 {
 }
 
 .capa_imagem {
-    width: 100%;
+  width: 100%;
 }
 .capa {
   position: relative;
@@ -223,7 +260,6 @@ h2 {
   grid-area: capa1;
   justify-items: center;
   align-items: center;
-
 }
 .capa2 {
   grid-area: capa2;
@@ -262,21 +298,18 @@ h2 {
   display: none;
   border-radius: 10px;
   background: rgba(58, 8, 75, 0.5);
-  
 }
 .capa:hover .capa__imagem--overlay,
 .capa:hover .capa__imagem--overlay p {
-
   display: flex;
   justify-content: center;
   align-content: center;
-  
 }
 
 .section__clientes {
   width: 100%;
   height: 500px;
-  background-color: rgb(56, 196, 201);
+  background-color:black; 
 }
 
 .section__contato {
@@ -309,60 +342,41 @@ h2 {
   padding-right: 10%;
 }
 
-@media only screen and (max-width: 575.98px) {
-
+@media only screen and (max-width: 767.98px) {
   .section__cases {
-    height: auto;
-    width: 100%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    gap: 10px;
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (6, 1fr);
+    padding: 20px;
+    margin-bottom: 50px;
+
+    grid-template-areas:
+      "titulo texto_cases"
+      "capa1 capa2"
+      "capa3 capa4"
+      "capa5 capa6"
+      "capa7 capa8"
+      "capa9 . ";
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .section__cases {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding: 20px;
     margin-bottom: 50px;
 
     grid-template-areas:
-
-    "titulo"
-    "texto_cases"
-    "capa1"
-    "capa2"
-    "capa3"
-    "capa4"
-    "capa5"
-    "capa6"
-    "capa7"
-    "capa8"
-    "capa9"
-   
-  } 
-}
-
-  @media only screen and (max-width: 767.98px) {
-
-    .section__cases {
-      height: auto;
-      width: 100%;
-      display: grid;
-      align-items: center;
-      justify-items: center;
-      gap: 10px;
-      grid-template-columns: repeat (2 1fr);
-      grid-template-rows: repeat (2 1fr);
-      padding: 20px;
-      margin-bottom: 50px;
-  
-      grid-template-areas:
-  
-      "titulo texto_cases"
-      "capa1 capa2"
-      "capa3 capa4"
-      "capa5 capa6"
-      "capa7 capa8"
-      "capa9"
-     
-     
-    } 
+      "titulo"
+      "texto_cases"
+      "capa1"
+      "capa2"
+      "capa3"
+      "capa4"
+      "capa5"
+      "capa6"
+      "capa7"
+      "capa8"
+      "capa9";
   }
+}
