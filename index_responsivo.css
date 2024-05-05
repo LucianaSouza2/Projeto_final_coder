@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn{
+    background-color: blueviolet;
+    border: none;
+    border-radius: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.header {
+  display: grid;
+  height: 100px;
+  grid-template-columns: repeat(2, 1fr) 50%;
+  grid-template-rows: auto auto auto;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  grid-template-areas: "logo empty menu_nav";
+}
+
+.logo {
+  grid-area: logo;
+  align-items: center;
+  align-content: center;
+
+}
+.logotipo {
+    border-radius: 0;
+}
+
+.empty {
+  grid-area: empty;
+}
+
+.menu {
+  display: flex;
+  grid-area: menu_nav;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 5%;
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: aliceblue;
+  flex-direction: row;
+  flex-wrap: row wrap;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  font-weight: 600;
+  color: rgb(165, 69, 255);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.video__container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  flex-wrap: row wrap;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  height: auto;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 35px;
+  text-align: left;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.texto__quem--somos {
+  grid-area: texto_p_qs;
+  font-size: 20px;
+}
+
+.titulo__main {
+  color: aliceblue;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 35px;
+  justify-content: center;
+  letter-spacing: 5px;
+  align-content: center;
+}
+
+.overlay-text {
+  padding: 20%;
+}
+
+.quem-somos {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100px 1fr;
+  column-gap: 30px;
+  row-gap: 50px;
+  align-items: center;
+  justify-items: center;
+  padding: 50px;
+  grid-template-areas:
+    "titulo_qs titulo_qs"
+    " img_office texto_p_qs";
+}
+
+.titulo__quem--somos {
+  color: black;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 35px;
+  text-transform: uppercase;
+
+  grid-area: titulo_qs;
+}
+
+img {
+  grid-area: img_office;
+  border-radius: 15px;
+}
+
+.servicos {
+  width: 100%;
+  height: auto;
+  background-color: rgb(243, 240, 247);
+  padding: 5%;
+ 
+}
+
+.titulo__servicos {
+  color: black;
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 35px;
+  text-transform: uppercase;
+  grid-area: titulo_serv;
+}
+
+.texto__serv {
+  display: grid;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  grid-area: texto_cases;
+  padding-top: 20px;
+ padding-bottom: 20px;
+
+}
+
+.cards_serv {
+    width: 100%;
+    height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+justify-content: center;
+  padding-top: 30px;
+  gap: 30px;
+}
+
+h6 {
+    padding-top: 30px;
+padding-bottom: 10px;
+
+}
+
+.card1 {
+
+  width: 300px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 1%;
+  padding-bottom: 1%;
+  align-content: center;
+  justify-content: center;
+}
+
+.card2 {
+
+    width: 300px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 1%;
+    padding-bottom: 1%;
+    align-content: center;
+    justify-content: center;
+  }
+  .card3 {
+
+    width: 300px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 1%;
+    padding-bottom: 1%;
+    align-content: center;
+    justify-content: center;
+  }
+  .card4 {
+
+    width: 300px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 1%;
+    padding-bottom: 1%;
+    align-content: center;
+    justify-content: center;
+  }
+  .card5 {
+
+    width: 300px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 1%;
+    padding-bottom: 1%;
+    align-content: center;
+    justify-content: center;
+  }
+
+.section__cases {
+    height: auto;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% repeat(3, 1fr);
+    padding: 50px;
+    margin-bottom: 200px;
+  
+    grid-template-areas:
+      "titulo texto_cases texto_cases"
+      "capa1 capa2 capa3"
+      "capa4 capa5 capa6"
+      "capa7 capa8 capa9";
+  }
+
+
+.texto_cases {
+    display: grid;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    grid-area: texto_cases;
+    padding: 50px;
+  }
+  
+  .capa_imagem {
+    width: 100%;
+  }
+  .capa {
+    position: relative;
+    width: 100%;
+  }
+  
+  .capa1 {
+    grid-area: capa1;
+    justify-items: center;
+    align-items: center;
+  }
+  .capa2 {
+    grid-area: capa2;
+  }
+  .capa3 {
+    grid-area: capa3;
+  }
+  .capa4 {
+    grid-area: capa4;
+  }
+  .capa5 {
+    grid-area: capa5;
+  }
+  
+  .capa6 {
+    grid-area: capa6;
+  }
+  
+  .capa7 {
+    grid-area: capa7;
+  }
+  
+  .capa8 {
+    grid-area: capa8;
+  }
+  
+  .capa9 {
+    grid-area: capa9;
+  }
+  
+  .capa__imagem--overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 10px;
+    background: rgba(58, 8, 75, 0.5);
+  }
+  .capa:hover .capa__imagem--overlay,
+  .capa:hover .capa__imagem--overlay p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+
+  
+@media only screen and (max-width: 767.98px) {
+  .header {
+    height: 200px;
+    grid-template-columns: 100% 0;
+    grid-template-rows: auto auto;
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-areas:
+      "logo empty"
+      "menu_nav menu_nav";
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .menu_nav {
+    margin-top: 50px;
+  }
+  ul {
+    gap: 5%;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  li a {
+    letter-spacing: 0;
+  }
+
+  .quem-somos {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(2, 1fr);
+    row-gap: 25px;
+    align-items: center;
+    justify-items: center;
+    padding: 50px;
+    grid-template-areas:
+      "titulo_qs"
+      " img_office"
+      "texto_p_qs";
+  }
+
+  .servicos {
+    padding-top: 50px;
+    padding: 5%;
+   
+  }
+
+  .section__cases {
+    grid-template-columns: repeat (2, 1fr);
+    grid-template-rows: repeat (6, 1fr);
+    padding: 20px;
+    margin-bottom: 50px;
+
+    grid-template-areas:
+      "titulo texto_cases"
+      "capa1 capa2"
+      "capa3 capa4"
+      "capa5 capa6"
+      "capa7 capa8"
+      "capa9 . ";
+  }
+
+}
+
+@media only screen and (max-width: 575.980.98px) {
+  .header {
+    height: 70px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-areas: "logo";
+  }
+
+  .quem-somos {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    column-gap: 0;
+
+    grid-template-areas:
+      "titulo_qs"
+      "img_office"
+      "texto_p_qs";
+  }
+
+  .servicos {
+    padding-top: 50px;
+    padding: 5%;
+   
+  }
+  .section__cases {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    margin-bottom: 50px;
+
+    grid-template-areas:
+      "titulo"
+      "texto_cases"
+      "capa1"
+      "capa2"
+      "capa3"
+      "capa4"
+      "capa5"
+      "capa6"
+      "capa7"
+      "capa8"
+      "capa9";
+  }
+}
