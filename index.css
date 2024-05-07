@@ -6,13 +6,12 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.btn{
-    background-color: blueviolet;
-    border: none;
-    border-radius: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-    
+.btn {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .header {
@@ -33,10 +32,9 @@ body {
   grid-area: logo;
   align-items: center;
   align-content: center;
-
 }
 .logotipo {
-    border-radius: 0;
+  border-radius: 0;
 }
 
 .empty {
@@ -79,7 +77,6 @@ a:hover {
   width: 100%;
   height: auto;
   flex-wrap: row wrap;
-
 }
 
 .overlay {
@@ -112,6 +109,13 @@ h1 {
   display: flex;
   text-align: left;
   justify-content: center;
+}
+h2 {
+  color: black;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 35px;
+  text-transform: uppercase;
 }
 
 p {
@@ -183,7 +187,6 @@ img {
   height: auto;
   background-color: rgb(243, 240, 247);
   padding: 5%;
- 
 }
 
 .titulo__servicos {
@@ -198,34 +201,31 @@ img {
 .texto__serv {
   display: grid;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
   grid-area: texto_cases;
   padding-top: 20px;
- padding-bottom: 20px;
-
+  padding-bottom: 20px;
 }
 
 .cards_serv {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-between;
-justify-content: center;
+  justify-content: center;
   padding-top: 30px;
   gap: 30px;
 }
 
 h6 {
-    padding-top: 30px;
-padding-bottom: 10px;
-
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .card1 {
-
   width: 300px;
   height: auto;
   background-color: rgb(255, 255, 255);
@@ -237,139 +237,263 @@ padding-bottom: 10px;
 }
 
 .card2 {
-
-    width: 300px;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    padding: 1%;
-    padding-bottom: 1%;
-    align-content: center;
-    justify-content: center;
-  }
-  .card3 {
-
-    width: 300px;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    padding: 1%;
-    padding-bottom: 1%;
-    align-content: center;
-    justify-content: center;
-  }
-  .card4 {
-
-    width: 300px;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    padding: 1%;
-    padding-bottom: 1%;
-    align-content: center;
-    justify-content: center;
-  }
-  .card5 {
-
-    width: 300px;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    padding: 1%;
-    padding-bottom: 1%;
-    align-content: center;
-    justify-content: center;
-  }
+  width: 300px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 1%;
+  padding-bottom: 1%;
+  align-content: center;
+  justify-content: center;
+}
+.card3 {
+  width: 300px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 1%;
+  padding-bottom: 1%;
+  align-content: center;
+  justify-content: center;
+}
+.card4 {
+  width: 300px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 1%;
+  padding-bottom: 1%;
+  align-content: center;
+  justify-content: center;
+}
+.card5 {
+  width: 300px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 1%;
+  padding-bottom: 1%;
+  align-content: center;
+  justify-content: center;
+}
 
 .section__cases {
-    height: auto;
-    width: 100%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 20% repeat(3, 1fr);
-    padding: 50px;
-    margin-bottom: 200px;
-  
-    grid-template-areas:
-      "titulo texto_cases texto_cases"
-      "capa1 capa2 capa3"
-      "capa4 capa5 capa6"
-      "capa7 capa8 capa9";
-  }
+  height: auto;
+  width: 100%;
+  padding-top: 3%;
+}
 
+.cases {
+  padding: 5%;
+}
+
+h2 .titulo_cases {
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 35px;
+  text-transform: uppercase;
+}
 
 .texto_cases {
-    display: grid;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
-    grid-area: texto_cases;
-    padding: 50px;
-  }
-  
-  .capa_imagem {
-    width: 100%;
-  }
-  .capa {
-    position: relative;
-    width: 100%;
-  }
-  
-  .capa1 {
-    grid-area: capa1;
-    justify-items: center;
-    align-items: center;
-  }
-  .capa2 {
-    grid-area: capa2;
-  }
-  .capa3 {
-    grid-area: capa3;
-  }
-  .capa4 {
-    grid-area: capa4;
-  }
-  .capa5 {
-    grid-area: capa5;
-  }
-  
-  .capa6 {
-    grid-area: capa6;
-  }
-  
-  .capa7 {
-    grid-area: capa7;
-  }
-  
-  .capa8 {
-    grid-area: capa8;
-  }
-  
-  .capa9 {
-    grid-area: capa9;
-  }
-  
-  .capa__imagem--overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    border-radius: 10px;
-    background: rgba(58, 8, 75, 0.5);
-  }
-  .capa:hover .capa__imagem--overlay,
-  .capa:hover .capa__imagem--overlay p {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  padding-top: 50px;
+}
 
-  
+.capas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  padding: 2%;
+  gap: 10px;
+  grid-template-areas:
+    "capa1 capa2 capa3"
+    "capa4 capa5 capa6"
+    "capa7 capa8 capa9";
+}
+.capa_imagem {
+  width: 100%;
+}
+
+.capa {
+  position: relative;
+  width: 100%;
+}
+
+.texto__overlay {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  color: aliceblue;
+  align-items: center;
+}
+
+.capa1 {
+  grid-area: capa1;
+}
+.capa2 {
+  grid-area: capa2;
+}
+.capa3 {
+  grid-area: capa3;
+}
+.capa4 {
+  grid-area: capa4;
+}
+.capa5 {
+  grid-area: capa5;
+}
+
+.capa6 {
+  grid-area: capa6;
+}
+
+.capa7 {
+  grid-area: capa7;
+}
+
+.capa8 {
+  grid-area: capa8;
+}
+
+.capa9 {
+  grid-area: capa9;
+}
+
+.capa__imagem--overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  border-radius: 20px;
+  display: none;
+  background: rgba(58, 8, 75, 0.5);
+}
+
+.capa:hover .capa__imagem--overlay,
+.capa:hover .capa__imagem--overlay {
+  display: flex;
+  height: 366px;
+  justify-content: center;
+  align-content: center;
+}
+
+.section__clientes {
+  width: 100%;
+  height: auto;
+  background-color:black; 
+  padding: 5%;
+}
+
+.txt_clientes {
+  color: aliceblue;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.texto_corrido {
+
+  color: aliceblue;
+  line-height: 26px;
+  padding-top: 30px;
+}
+
+
+.cards_client {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 60px;
+}
+
+
+.card1_client {
+  width: 150px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.card2_client {
+  width: 250px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.card3_client {
+  width: 100px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+
+.card4_client {
+  width: 100px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+.card5_client {
+  width: 150px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+.card6_client {
+  width: 150px;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+}
+.section__contato {
+
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(252, 252, 252);
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer {
+  display: flex;
+  height: 50px;
+  background-color: black;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.footer p {
+  font-size: 10px;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: aliceblue;
+  letter-spacing: 3px;
+ justify-content: center;
+ justify-items: center;
+}
+.form {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 @media only screen and (max-width: 767.98px) {
   .header {
     height: 200px;
@@ -418,25 +542,26 @@ padding-bottom: 10px;
   .servicos {
     padding-top: 50px;
     padding: 5%;
-   
   }
 
-  .section__cases {
-    grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: repeat (6, 1fr);
-    padding: 20px;
-    margin-bottom: 50px;
-
+  .capas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    align-content: center;
+    padding: 2%;
+    gap: 10px;
     grid-template-areas:
-      "titulo texto_cases"
       "capa1 capa2"
       "capa3 capa4"
       "capa5 capa6"
       "capa7 capa8"
-      "capa9 . ";
+      "capa9 .";
   }
-
 }
+
+
 
 @media only screen and (max-width: 575.980.98px) {
   .header {
@@ -469,17 +594,14 @@ padding-bottom: 10px;
   .servicos {
     padding-top: 50px;
     padding: 5%;
-   
   }
-  .section__cases {
+
+  .capas {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    padding: 20px;
-    margin-bottom: 50px;
-
+    padding: 5%;
     grid-template-areas:
-      "titulo"
-      "texto_cases"
+ 
       "capa1"
       "capa2"
       "capa3"
@@ -491,3 +613,4 @@ padding-bottom: 10px;
       "capa9";
   }
 }
+
