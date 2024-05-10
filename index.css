@@ -75,16 +75,18 @@ a:hover {
   color: rgb(165, 69, 255);
 }
 
+/*
 .main {
   display: flex;
   flex-wrap: wrap;
 }
+*/
 
 .video__container {
   position: relative;
   width: 100%;
   height: auto;
-  flex-wrap: row wrap;
+ 
 }
 
 .overlay {
@@ -124,6 +126,7 @@ h2 {
   font-weight: 500;
   line-height: 35px;
   text-transform: uppercase;
+  padding-bottom: 20px;
 }
 
 p {
@@ -158,11 +161,27 @@ p {
 .overlay-text {
   padding: 20%;
 }
+#quem-somos {
+  padding: 5%;
+  display: flex; 
+  height: auto;
+}
+
+
+#carouselExample {
+
+  width: 100%;
+ 
+
+}
 
 .quem-somos {
   width: 100%;
   height: auto;
-  display: grid;
+
+
+ 
+  /*display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 100px 1fr;
   column-gap: 30px;
@@ -172,7 +191,7 @@ p {
   padding: 50px;
   grid-template-areas:
     "titulo_qs titulo_qs"
-    " img_office texto_p_qs";
+    " img_office texto_p_qs";*/
 }
 
 .titulo__quem--somos {
@@ -181,8 +200,12 @@ p {
   font-weight: 300;
   line-height: 35px;
   text-transform: uppercase;
+padding-bottom: 30px;
+}
 
-  grid-area: titulo_qs;
+.texto__quem--somos{
+padding-right: 30px;
+
 }
 
 img {
@@ -517,13 +540,17 @@ h2 .titulo_cases {
       "menu_nav menu_nav"; */
   }
 
+  #quem-somos {
+    padding: 5%;
+    display: inline-block; 
+
+  }
+
   .logo {
     display: flex;
     justify-content: center;
   }
-  .menu_nav {
-    /* margin-top: 50px; */
-  }
+ 
   ul {
     gap: 5%;
     justify-content: center;
@@ -532,22 +559,6 @@ h2 .titulo_cases {
 
   li a {
     letter-spacing: 0;
-  }
-
-  .quem-somos {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px repeat(2, 1fr);
-    row-gap: 25px;
-    align-items: center;
-    justify-items: center;
-    padding: 50px;
-    grid-template-areas:
-      "titulo_qs"
-      " img_office"
-      "texto_p_qs";
   }
 
   .servicos {
@@ -584,26 +595,27 @@ h2 .titulo_cases {
     /* grid-template-areas: "logo"; */
   }
 
+
+
+ .overlay-text h1 
+ {
+    font-size: 25px;
+    padding-top: 50px;
+  
+  }
+
+  .overlay-text  p {
+    font-size: 14px;
+    line-height: 20px;
+   
+  }
+  
   ul {
     display: none;
   }
 
   .quem-somos {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-    row-gap: 10px;
-    align-items: center;
-    justify-items: center;
-    padding: 0;
-    column-gap: 0;
-
-    grid-template-areas:
-      "titulo_qs"
-      "img_office"
-      "texto_p_qs";
+padding: 16px;
   }
 
   .servicos {
